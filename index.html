@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Survey Form
+    </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body data-new-gr-c-s-check-loaded>
+    <!-- START NAV -->
+
+    <nav id="navbar" class="nav">
+        <ul class="nav-list">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="#contact">Our Products</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <!-- END NAV -->
+    <!-- START HEADER SECTION -->
+    <header class="header">
+        <h1 id="title" class="text-center">Ajira Survey Form</h1>
+        <p id="description" class="description text-center">Thank you for taking the time to help us improve the
+            platform</p>
+    </header>
+    <!-- END HEADER SECTION -->
+    <!-- START FORM SECTION -->
+    <div class="container">
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="quantity" id="name-label">Name:</label>
+                <input id="name" placeholder="Enter your name" type="text" class="form-control" required />
+            </div>
+            <div class="form-group">
+                <label for="quantity" id="email-label">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" name="email" required
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="quantity" id="number-label">Mobile Number:</label>
+                <input type="number" id="number" placeholder="Enter your number" name="number" min="1" max="100"
+                    step="any" required class="form-control" />
+            </div>
+            <div class="form-group">
+                <p for="dropdown">Select an option:</p>
+                <select id="dropdown" class="form-control" name="dropdown">
+                    <option value="option1">Select currect role 1</option>
+                    <option value="option2">student</option>
+                    <option value="option3">Full time Job</option>
+                    <option value="option4">Full time learner</option>
+                    <option value="option5">prefer not to say</option>
+                    <option value="option5">other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Can you refer a Friend? Choose an option:</p>
+                <label for="option1">
+                    <input class="input-radio" type="radio" id="option1" name="options" value="Definitely">
+                    Definitely</label><br>
+                <label for="option2">
+                    <input class="input-radio" type="radio" id="option2" name="options" value="Maybe">
+                    Maybe</label><br>
+                <label for="option3">
+                    <input class="input-radio" type="radio" id="option3" name="options" value="Not sure">
+                    Not sure</label><br>
+            </div>
+            <div class="form-group">
+                <p>what would you like to see improved <span class="clue">(check all that apply)</span></p>
+                <label for="option3">
+                    <input class="input-checkbox" type="checkbox" name="lista3" value="Front-end Projects">
+                    Front-end Projects</label><br>
+                <label for="option3">
+                    <input class="input-checkbox" type="checkbox" name="lista3" value="Back-end Projects">
+                    Back-end Projects</label><br>
+                <label for="option3">
+                    <input class="input-checkbox" type="checkbox" name="lista3" value="Data Visualization">
+                    Data Visualization</label><br>
+                <label for="option3">
+                    <input class="input-checkbox" type="checkbox" name="lista3" value="Challenges">
+                    Challenges</label><br>
+            </div>
+            <div class="form-group">
+                <p>Any comment or suggestion?</p>
+                <textarea class="input-textarea" type="textarea" id="textarea" placeholder="enter your comment here..."
+                    name="textarea"></textarea>
+            </div>
+            <div class="form-group">
+                <button class="submit-button" id="submit" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+   <!-- END FORM SECTION -->
+    <!-- START FOOTER SECTION -->
+    <footer>
+        <p>&copy; 2023 developed by Mavine Naaman. All rights reserved.</p>
+    </footer>
+
+    <!-- END FOOTER SECTION -->
+</body>
+
+</html>
